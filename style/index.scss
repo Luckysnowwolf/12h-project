@@ -1,22 +1,85 @@
+$font-family: 'Josefin Sans'; 
+$font-family2: 'Aleo';
+
+
+
 .screen1 {
     display: flex;
     justify-content: center;
     background-image: url(../images/grid-image1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 10%;
     background-position: center;
     background-attachment: fixed;
 }
-.screen1-container{
+.scrolldown{
     display: flex;
-    flex-direction: column;
-    padding: 50px;
+    margin-top: 30%;
+    justify-content: center;
+    justify-items: center;
 
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 26px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 2.8px;
+
+color: #FFFFFF;
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .screen1 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 30px) and (max-width: 450px) {
+    .screen1-container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .searchbar {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .searchbar input {
+        display: flex;
+        padding-right: 0px;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
+    .searchbar button {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 .searchbar {
     display: flex;
     background-color: white;
+    margin-top: 20px;
     padding: 5px;
     border-radius: 0px;
 }
@@ -51,7 +114,7 @@
 }
 
 .center-bar {
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +124,14 @@
 
 .screen1-header {
     display: flex;
+    font: $font-family;
     color: white;
+    margin-bottom: 20px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 26px;
     justify-content: center;
     align-items: center;
 
@@ -69,6 +139,11 @@
 
 .screen1-text {
     color: white;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 70;
+    font-size: 28px;
+    line-height: 26px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,20 +151,68 @@
 
 .navbar {
     background-color: rgba(84, 116, 253, 1);
+    padding: 20px;
     display: flex;
     justify-content: space-evenly;
-    max-width: 100%;
-    min-width: 320px;
-    width: 100%;
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .navbar-header {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .navbar-links {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-items: center;
+        flex-direction: column;
+    }
 }
 
 .navbar-header {
     display: flex;
+    font:$font-family;
+    font-style: normal;
+    font-weight: 70;
+    font-size: 28px;
+    line-height: 26px;
+    margin-left: 20px;
     justify-self: center;
+}
+.link{
+    margin-left: 20px;
+}
+.link2{
+    margin-left: 20px;
+}
+.link3{
+    margin-left: 20px;
+}
+.link4{
+    margin-left: 20px;
 }
 
 .navbar-links {
     display: flex;
+    font:$font-family;
+    font-style: normal;
+    font-weight: 50;
+    font-size: 18px;
+    line-height: 16px;
     color: white;
     padding: 10px;
     justify-content: center;
@@ -109,9 +232,17 @@
     height: 100%
 }
 
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .screen2 {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        flex-direction: column;
+    }
+}
+
 .images {
-    display: flex;
-    width: 50%;
+    width: 100%;
     height: 100%;
     overflow: hidden;
 }
@@ -122,6 +253,24 @@
     padding-left: 50px;
     flex-direction: column;
     width: 50%;
+}
+.leftside h3{
+    color: white;
+    margin-bottom: 20px;
+    font:$font-family;
+    font-style: normal;
+    font-weight: 70;
+    font-size: 28px;
+    line-height: 26px;
+}
+.leftside p{
+    color: white;
+    margin-bottom: 20px;
+    font: $font-family;
+    font-style: normal;
+    font-weight: 50;
+    font-size: 18px;
+    line-height: 26px;
 }
 
 .leftside button {
@@ -144,7 +293,7 @@
 
 .rightside {
     padding: 50px;
-    display: flex;
+    display: grid;
     width: 50%;
 }
 
@@ -152,16 +301,23 @@
 .grid-container {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: (4 1fr);
-    grid-template-rows: (4 1fr);
+    max-width: 1200px;
+    width: 100%;
+    min-height: 500px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: inherit;
+    padding: 5px;
 }
 
 .grid-image1 {
-    grid-column: 1/2;
+    grid-column: 1/3;
+    grid-row: 1/2;
 }
 
 .grid-image2 {
-    grid-column: 3/4;
+    grid-column: 2/4;
+    grid-row: 3/4;
 }
 
 .image-area {
@@ -171,38 +327,67 @@
     justify-content: space-between;
     box-sizing: border-box;
 }
-.material-symbols-outlined{
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .image-area {
+        flex-wrap: wrap;
+        align-content: space-around;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .image-area p {
+        display: flex;
+    }
+}
+
+.material-symbols-outlined {
     margin-top: 20px;
     display: flex;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 100,
-  'GRAD' 40,
-  'opsz' 48
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 100,
+        'GRAD' 40,
+        'opsz' 48
 }
-.image-area span{
+
+.image-area span {
     color: blue;
-    margin-left: 60px;
+    margin-left: 30%;
     font-size: 48px;
     font-variation-settings: 'OPSZ' 48;
 }
 
-.image-area p{
-    color:white;
-font-size: 20px;
+.image-area p {
+    color: white;
+    font-size: 20px;
 }
 
 .image-area-left {
-    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
 }
-.image-area-mid span{
+
+.image-area-mid {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.image-area-mid span {
     color: red;
 
 }
 
 .image-area-right {
-    margin-right: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
 }
 
@@ -217,25 +402,72 @@ font-size: 20px;
     height: 100%;
 }
 
-.screen3-items{
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .screen3 {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .screen3-text {
+        display: flex;
+        padding: 0px;
+        flex-wrap: wrap;
+        align-content: space-around;
+        flex-direction: column;
+    }
+}
+
+
+.screen3-text {
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: inherit;
+    font: $font-family;
+    font-style: normal;
+    font-weight: 70;
+    font-size: 28px;
+    line-height: 26px;
     display: flex;
     flex-direction: column;
     justify-self: center;
-    background-color: #000;
     color: #fff;
-    opacity: .5;
-    width: 35vw;
+    width: 30vw;
     height: fit-content;
     margin: 150px 100px 120px 100px;
-    padding:10px 10px;
-    font-size:13px;
+    padding: 10px 10px;
+    font-size: 13px;
 }
 
-.screen3-container h2 {}
 
-.screen3-container h1 {}
+.screen3-container h2 {
+    color: #fff;
+    font: $font-family;
+    font-style: normal;
+    font-weight: 50;
+    font-size: 18px;
+    line-height: 16px;
+}
 
-.screen3-container p {}
+.screen3-container h1 {
+    color: white;
+    font: $font-family;
+    font-style: normal;
+    font-weight: 50;
+    font-size: 18px;
+    line-height: 16px;
+}
+
+.screen3-container p {
+    color: white;
+    font: $font-family;
+    font-style: normal;
+    font-weight: 50;
+    font-size: 18px;
+    line-height: 16px;
+}
 
 .screen3 button {
     display: flex;
@@ -270,26 +502,44 @@ font-size: 20px;
     background-blend-mode: multiply;
     height: 100%
 }
-.screen4__container{
-    display: flex;
-    justify-content: flex-end;
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .screen4 {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        flex-direction: column;
+    }
 }
 
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .screen4-text {
+        display: flex;
+        width: fit-content;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
 
-.screen4__items{
+.screen4-text {
     display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: inherit;
+    font: $font-family;
+    font-style: normal;
+    font-weight: 50;
+    font-size: 18px;
+    line-height: 16px;
     flex-direction: column;
-    justify-content: flex-end;
-    background-color: #000;
+    justify-self: center;
     color: #fff;
-    opacity: .5;
-    width: 35vw;
+    width: 30vw;
     height: fit-content;
-    margin: 100px 100px 100px 100px;
-    padding:10px 10px;
-    font-size:13px;
-
+    margin: 150px 100px 120px 100px;
+    padding: 10px 10px;
+    font-size: 13px;
 }
+
 .screen4 button {
     display: flex;
     padding: 15px;
@@ -307,13 +557,31 @@ font-size: 20px;
 .screen4 button:active {
     background: blueviolet;
 }
+
 .screen4-container h2 {
     color: white;
+    font: $font-family2;
+    font-style: normal;
+    font-weight: 50;
+    font-size: 18px;
+    line-height: 16px;
 }
 
-.screen4-container h1 {}
+.screen4-container h1 {
+    font: $font-family;
+    font-style: normal;
+    font-weight: 50;
+    font-size: 18px;
+    line-height: 16px;
+}
 
-.screen4-container p {}
+.screen4-container p {
+    font: $font-family;
+    font-style: normal;
+    font-weight: 50;
+    font-size: 18px;
+    line-height: 16px;
+}
 
 .screen5 {
     display: flex;
@@ -324,6 +592,32 @@ font-size: 20px;
     background-position: center;
     background-attachment: fixed;
     height: 100%
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .screen5 {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .screen5-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: fit-content;
+        align-content: space-around;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+    .screen5-container img {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .screen5-container {
@@ -350,37 +644,77 @@ font-size: 20px;
     align-items: center;
     text-align: center;
     color: #FFFFFF;
-
-
-
 }
 
 .screen5-box {
     display: flex;
-    flex-direction: column;
     background-color: rgb(69, 69, 69);
 }
 
 .screen5-container h1 {
-    margin-top: 60px;
     color: white;
+    font: $font-family;
+    font-style: normal;
+    font-weight: 50;
+    font-size: 18px;
+    line-height: 16px;
     margin-left: 20px;
 
 }
 
 .screen5-container img {
     display: flex;
-    height: 100%;
+    width: 100%;
 
+}
+
+.screen5-text {
+    width: 100%;
 }
 
 .screen5-container p {
     color: white;
     margin-left: 20px;
     font-style: normal;
-    font-weight: 40;
-    font-size: 15px;
-    line-height: 30px;
+    margin-right: 10px;
+    font-size: 13px;
+    line-height: 20px;
 
 
+}
+
+.endnav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: gray;
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+    .endnav {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        flex-direction: column;
+    }
+}
+
+.endnav h1 {
+    display: flex;
+    font: $font-family;
+    font-style: normal;
+    font-weight: 70;
+    font-size: 48px;
+    line-height: 26px;
+    justify-content: center;
+}
+
+.endnav p {
+    display: flex;
+    font: $font-family;
+    font-style: normal;
+    font-weight: 50;
+    font-size: 18px;
+    line-height: 16px;
+    justify-content: center;
 }
